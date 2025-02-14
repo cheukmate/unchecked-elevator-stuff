@@ -243,4 +243,5 @@ public class Elevator extends SubsystemBase {
 // operatorXbox.rightBumper().onTrue(new InstantCommand(() -> m_elevator.setPositionInches(ElevatorConstants.L2)));
 // operatorXbox.leftTrigger().onTrue(new InstantCommand(() -> m_elevator.setPositionInches(ElevatorConstants.L3)));
 // operatorXbox.rightTrigger().onTrue(new InstantCommand(() -> m_elevator.setPositionInches(ElevatorConstants.L4)));
+// operatorXbox.a().onTrue(new InstantCommand(() -> m_elevator.homeElevator()));;
 
