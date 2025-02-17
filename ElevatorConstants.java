@@ -2,26 +2,26 @@ package frc.robot;
 
 public class ElevatorConstants {
 
-    public static final double maxPos = 0; //the highest the elevator can go. in inches change this
-    public static final double countsPerInch = 0; // the current position of the elevator. I dont know, probably? change this
-    public static final double kD = 0; //change this
-    public static final double kI = 0; //change this
-    public static final double kP = 0; //change this
-    public static final double maxAcceleration = 0; //used to set constrainst. change this
-    public static final double maxVelocity = 0; //used to set constraints. change this
-    public static final int limitSwitchPort = 0; // used to create a bottom limit. change this
-    public static final int realElevatorID = 14; //u can change this if u want ig
-    public static final double downPos = 0; //what height the elevator is when its down. change this
-    public static final double L1 = 1; //the height the elevator is when its at L1 change this
-    public static final double L2 = 2; // the height the elevator is when its at L2. change this
-    public static final double L3 = 3; //the height the elevator is when its at L3. change this
-    public static final double L4 = 4; //the height the elevator is when its at L4. change this
-    public static final double max_output = 0; //the maximum power of the elevator. change this
-    public static final double bottomPos = 0; //used to home the elevator. Probably don't have to change this?
-    public static final double posTolerance = 0; //used to check if the elevator is within a small tolerance of the target height. change this
-    public static final double kS = 0; //change this
-    public static final double kG = 0; //change this
-    public static final double kV = 0; //change this
-    public static final double minPos = 0; //for the setpoint? im a bit confused. change this
+    public static final double maxPos = 0; // Maximum elevator height in inches (adjust based on actual mechanism)
+    public static final double countsPerInch = 0; // Encoder counts per inch (depends on your encoder)
+    public static final double kD = 0;  // Derivative gain (tune this based on your control needs)
+    public static final double kI = 0; // Integral gain (often kept low or zero)
+    public static final double kP = 0;  // Proportional gain (tune for responsiveness)
+    public static final double maxAcceleration = 0; // Maximum acceleration in inches per second squared
+    public static final double maxVelocity = 0; // Maximum velocity in inches per second
+    public static final int limitSwitchPort = 0; // Digital input port for the limit switch (check wiring)
+    public static final int realElevatorID = 14;  // Motor controller ID (keep or change based on setup)
+    public static final double downPos = 0; // Position when the elevator is fully down
+    public static final double L1 = 1; // Height at L1
+    public static final double L2 = 2; // Height at L2
+    public static final double L3 = 3; // Height at L3
+    public static final double L4 = 4; // Height at L4
+    public static final double max_output = 0; // Maximum motor power (usually 1.0 for full power)
+    public static final double bottomPos = 0; // Homing position (same as downPos)
+    public static final double posTolerance = 0; //// Allowable error in inches. used to check if the elevator is within a small tolerance of the target height. change this
+    public static final double kS = 0; // Static friction feedforward (depends on motor characteristics)
+    public static final double kG = 0; // Gravity feedforward (compensates for gravity)
+    public static final double kV = 0; // Velocity feedforward (depends on your system)
+    public static final double minPos = 0; // Minimum setpoint (same as downPos)
 
 }
